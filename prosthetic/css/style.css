@@ -1,0 +1,885 @@
+/*Small reset*/
+body, ul, ol, h1,h2,h3,h4,h5,h6,form,li,p,input,select,legend,textarea,fieldset{ margin:0; padding:0;}
+
+
+
+/* HERE IS THE CSS CODE OF LAYOUT STRUCTURE AND ELEMENTS */
+
+/*
+
+1) LOGO AND NAVIGATION CONTAINER
+     
+	A- LOGO
+	B- NAVIGATION
+
+2) RIGHT SIDE CONTAINER
+
+	A- WEBSITE HEADING
+	
+3) PORTFOLIO
+4) FOOTER
+
+	A- COPYRIGHT
+	B- SOCIAL ICONS
+	
+5) MAIN
+
+	A- MAIN CONTENT
+	B- SIDEBAR
+	
+6) GENERIC
+7) FORMS
+
+	A- SEARCH FORM
+	B- CONTACT FORM			
+
+*/
+
+a, a img {
+outline: none;
+border: none;	
+}
+
+body {
+font-size: 12px;
+font-family: "Arial", sans-serif;
+line-height: 18px;
+position: relative;
+color: #ffffff;
+}
+
+#full_container {
+	overflow: scroll;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+#full_container .last {
+margin-right: 0;	
+}
+
+
+/*styles switcher*/
+ul.styles_switcher {
+list-style-type: none;
+list-style-position: outside;
+position: fixed;
+left: 1200px;
+width: 37px;
+height: auto;
+line-height: 14px;
+background: url(../images/theme/styles_switcher.png) no-repeat bottom center;
+text-align: center;
+font-size: 10px;
+padding: 15px 0 5px;
+overflow: hidden;	
+}
+
+ul.styles_switcher li {
+display: block;
+margin: 5px 0;
+}
+
+ul.styles_switcher li a {
+color: #8F754B;
+text-decoration: none;
+display: block;	
+}
+
+ul.styles_switcher li a:hover {
+color: #E9D8B6;
+text-decoration: underline;
+}
+
+ul.styles_switcher li a.sliding_button {
+height: 16px;
+width: 16px;
+display: block;
+background: url(../images/theme/settings.png) no-repeat center center;
+text-indent: -9999px;
+color: #000000;
+margin: 0 auto;
+margin-top: 15px;
+opacity: .6;
+}
+
+ul.styles_switcher li a.sliding_button:hover {
+opacity: 1;
+padding-top: 5px;	
+}
+
+/*tooltip*/
+#tooltip {
+	position:absolute;
+	background:#080706;
+	padding:5px;
+	color:#000000;
+	display:none;
+	overflow: hidden;
+	font-size: 9px;
+	border: 1px solid #211F17;
+}
+
+/************************************************************************
+1) LOGO AND NAVIGATION CONTAINER
+*************************************************************************/
+
+#logo_and_navigation {
+position: absolute;
+padding-top: 55px;	/*top space between logo and navigation part and top*/
+padding-left: 50px;	/*left space between logo and navigation part and left*/
+display: block;
+width: 240px;
+float: left;
+height: 100%;	
+}
+
+
+/* A- LOGO */
+
+.logo a, .logo a:hover {
+text-indent: -9999px;
+display: block;
+position: relative;
+top: 0;
+left: 0;
+outline: none;
+border: none;
+height: 121px;
+width: 200px;
+text-transform: uppercase;	
+}
+
+/* B- NAVIGATION */
+
+ul#nav {
+font-family: "Arial", sans-serif;
+list-style-type: none;
+list-style-position: outside;
+display: block;
+padding-top: 55px;	
+}
+
+ul#nav li {
+	height: 32px;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 6px;	/*here control the vertical space between links*/
+	z-index: 0;
+	position: relative;
+	background-color: #FFFFFF;
+	font-size: 16px;
+}
+
+ul#nav li a {
+font-family: "Arial", sans-serif;
+font-size: 26px;
+line-height: 26px;
+text-decoration: none;
+/*text-transform: uppercase;
+*/display: block;
+overflow: hidden;
+z-index: -1;
+padding-bottom: 2px;
+}
+
+ul#nav li a.hoverMenu {
+margin-top:-32px;
+display: block;
+overflow: hidden;
+z-index: -1;
+}
+
+/************************************************************************
+2) RIGHT SIDE CONTAINER
+*************************************************************************/
+
+#right_side_container {
+width: 790px;
+padding: 120px 35px 0 55px;
+overflow: hidden;
+position: relative;
+left: 270px;
+display: block;
+margin: 0;
+color: #000000;
+}
+
+/* A- WEBSITE HEADING */
+
+.website_heading {
+padding-bottom: 40px;	
+}
+
+.website_heading h1 {
+font-family: "Arial", sans-serif;
+font-size: 36px;
+line-height: 45px;
+/*text-transform: uppercase;
+*/}
+
+/************************************************************************
+2) PORTFOLIO
+*************************************************************************/
+
+#portfolio {
+display: block;
+width: 100%;
+overflow: hidden;	
+}
+
+/*selecter content*/
+
+.selecterContent {
+    width:830px;
+    min-height: 197px; /* you need to specify minimum height value */
+    float:left;
+    clear:both;
+}
+ 
+.selecterContent ul li {
+    width:236px; /* you need to specify width and height values of the element */
+    height:157px;
+    overflow:hidden;
+    margin-right: 40px;
+    margin-top: 40px;
+    display:block;
+    list-style-type:none;
+    list-style-position: outside;
+    float: left;
+}
+  
+/*selecter buttons*/
+
+.selecterBtns ul {
+list-style-type: none;
+list-style-position: outside;
+overflow:hidden;
+position: relative;
+display: block;
+width: 100%;
+margin-bottom: -10px;
+color: #000000;	
+}
+
+.selecterBtns ul li {
+float: left;
+margin-right: 15px;	
+}
+
+.selecterBtns ul li.sorter_title {
+margin-right: 20px;	
+}
+
+.selecterBtns ul li a {
+text-decoration: none;
+color: #ddc9a0;
+font-size: 12px;	
+}
+
+.selecterBtns ul li a.active {
+color: #8f754b;	
+}
+
+.selecterBtns ul li a:hover {
+text-decoration: underline;	
+}
+
+/*portfolio item*/
+
+.portfolio_item {
+float: left;
+display: block;
+width: 226px;
+margin-right: 40px;
+padding: 5px;
+}
+
+.portfolio_frontpage_title {
+font-size: 30px;
+/*text-transform: uppercase;
+*/line-height: 38px;
+padding-bottom: 30px;	
+}
+
+.portfolio_item span.item_title {
+padding: 15px;
+font-size: 18px;
+display: block;
+}
+
+.portfolio_item p {
+padding: 0 15px 15px 15px;
+font-size: 12px;	
+}
+
+/* sliding box */
+
+.boxgrid{ 
+width: 226px; 
+height: 147px; 
+float:left; 
+overflow: hidden; 
+position: relative; 
+z-index: 0;	/*Important issue*/
+}
+.boxgrid img{ 
+position: absolute; 
+top: 0; 
+left: 0; 
+border: 0; 
+z-index: 2;	/*Important issue*/
+}
+
+/*preview button*/
+span.preview {
+z-index: 1;	
+}
+span.preview a {
+width: 16px;
+height: 16px;
+text-indent: -9999px;
+border: none;
+outline: none;
+display: inline-block;
+position: absolute;
+bottom: 10px;
+right: 10px;
+z-index: 1;	/*Important issue*/
+padding: 5px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+/************************************************************************
+4) FOOTER
+*************************************************************************/
+
+#footer_wrapper {
+display: block;
+overflow: hidden;
+clear: both;
+padding: 35px 10px;
+width: 800px;
+margin-left: -15px;	
+}
+
+#footer {
+display: block;
+width: 800px;
+height: 48px;
+color: #FFF;
+}
+
+/* A- COPYRIGHT */
+
+.copyright {
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 15px;
+	color: #FFF;
+}
+
+/* B- SOCIAL ICONS */
+
+ul.social_icons {
+list-style-type: none;
+list-style-position: outside;
+float: right;
+position: relative;
+right: 16px;
+top: 16px;	
+}
+
+ul.social_icons li {
+float: left;
+display: block;
+margin-right: 2px;	
+}
+
+ul.social_icons li a img {
+outline: none;
+border: none;	
+}
+
+
+
+/************************************************************************
+5) MAIN
+*************************************************************************/
+
+#main_wrapper {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 780px;
+	padding: 5px;
+	background-color: #ffffff;
+}
+
+#main {
+display: block;
+overflow: hidden;
+width: 740px;
+padding: 20px;
+}
+
+/*main heading*/
+#main #main_heading {
+display: block;f
+width: 100%;
+padding-bottom: 14px;
+font-size: 28px;
+}
+
+/* A- CONTENT */
+
+#content {
+float: left;
+display: block;
+overflow: hidden;
+width: 460px;
+padding-top: 0px;
+padding-right: 20px;	
+}
+
+.fullwidth #content {
+width: 100%;
+padding-right: 0;	
+}
+
+.fullwidth #sidebar {
+display: none;	
+}
+
+/*entry*/
+.entry {
+display: block;
+width: 100%;
+overflow: hidden;	
+}
+
+/*entry title*/
+.entry_title {
+display: block;
+width: 100%;
+padding-bottom: 10px;
+}
+
+/*entry head*/
+.entry_head {
+display: block;
+width: 100%;
+overflow: hidden;
+padding: 7px 0 11px;
+}
+
+.category a, .user a, .date a, .comments a {
+text-decoration: none;
+/*text-transform: uppercase;
+*/font-size: 11px;
+display: inline-block;
+margin-right: 15px;
+padding-left: 25px;
+line-height: 16px;	
+}
+
+.category a:hover, .user a:hover, .date a:hover, .comments a:hover {
+text-decoration: underline;	
+}
+
+/*entry content*/
+.entry_content {
+display: block;
+width: 100%;
+padding-top: 15px;
+}
+
+/*pagination*/
+#pagination {
+font-size: 10px;
+display: block;
+position: relative;
+float: left;
+}
+
+#pagination .pages {
+float: left;
+margin-right: 5px;
+/*text-transform: uppercase;
+*/position: relative;
+top: 4px;	
+}
+
+#pagination .pages .number {
+padding: 0 2px;	
+}
+
+#pagination ul {
+list-style-type: none;
+list-style-position: outside;
+display: block;
+position: relative;
+float: left;
+}
+
+#pagination ul li {
+float: left;
+display: block;
+margin-right: 5px;
+padding: 4px 0;
+}
+
+#pagination ul li a.inactive, #pagination ul li span.active {
+padding: 3px 6px;
+}
+
+
+#pagination ul li a.inactive {
+text-decoration: none;
+}
+
+#pagination ul li a.inactive:hover {
+text-decoration: underline;
+}
+
+/* B- SIDEBAR */
+
+#sidebar {
+width: 260px;
+float: left;
+display: block;
+overflow: hidden;
+padding-top: 35px;	
+}
+
+.box_sidebar {
+display: block;
+width: 100%;
+padding-bottom: 40px;
+}
+
+/*box sidebar title*/
+.box_sidebar_title {
+display: block;
+width: 100%;
+padding-bottom: 10px;
+font-size: 15px;
+}
+
+/*menu sidebar*/
+ul.menusidebar {
+list-style-type: none;
+list-style-position: outside;
+display: block;
+width: 100%;	
+}
+
+ul.menu_sidebar li {
+display: block;
+padding-bottom: 2px;	
+}
+
+ul.menu_sidebar li a {
+display: block;
+padding: 6px 0 9px 35px;
+text-decoration: none;
+font-size: 11px;	
+}
+
+/*ads sidebar*/
+ul.ads_sidebar {
+list-style-type: none;
+list-style-position: outside;
+display: block;	
+}
+
+ul.ads_sidebar li {
+display: block;
+margin-top: 15px;
+line-height: 0;	
+}
+
+ul.ads_sidebar li a {
+line-height: 0;
+display: block;	
+}
+
+/************************************************************************
+6) GENERIC
+*************************************************************************/
+
+/*headers setting*/
+h1, h2, h3, h4, h5, h6 {
+
+display: block;
+letter-spacing: .5px;
+font-weight: lighter;
+padding-top: 1px;
+color: #dcddde;
+}
+
+h1 {
+font-size: 32px;	
+}
+
+h2 {
+font-size: 26px;	
+}
+
+h3 {
+font-size: 21px;	
+}
+
+h4 {
+font-size: 15px;	
+}
+
+h5 {
+font-size: 12px;	
+}
+
+h6 {
+font-size: 10px;	
+}
+
+/*paragraph setting*/
+p {
+line-height: 18px;
+display: block;
+padding-bottom: 10px;	
+}
+
+/*side paragraph (this when using paragraph with alignleft or alignright image)*/
+.entry_content p.beside_paragraph {
+margin-top: -3px;
+/*line-height: 21px;*/
+padding-top: 0;	
+}
+
+/*normal paragraph (for paragraph filling the fullwidth wrapper)*/
+.entry_content p {
+margin-top: 0;
+/*line-height: 21px;*/	
+}
+
+/*images alignment*/
+.entry_content img {
+padding-bottom: 10px;
+padding: 3px;
+margin-bottom: 5px;	
+}
+
+/*maximum width for images in general*/
+
+.entry_content img {
+max-width: 452px;	
+}
+
+.fullwidth .entry_content img {
+max-width: 732px;	
+}
+
+.alignleft {
+float: left;
+margin-right: 20px;
+display: block;	
+}
+
+.alignright {
+float: right;
+margin-left: 20px;
+display: block;	
+}
+
+/*separation line*/
+.separation_wrapper {
+display: block;
+overflow: hidden;
+position: relative;
+width: 100%;
+padding: 30px 0;	
+}
+
+.separation {
+height: 2px;
+display: block;
+width: 100%;	
+}
+
+/*separation in portfolio (only space without line)*/
+#portfolio .separation_wrapper {
+padding: 20px 0;	
+}
+
+#portfolio .separation {
+height: 0px;
+background: none;	
+}
+
+/*top sliding*/
+.top_sliding a {
+width: 28px;
+height: 18px;
+position: absolute;
+right: 0;
+text-transform: uppercase;
+line-height: 17px;
+text-decoration: none;
+font-size: 8px;
+text-align: center;
+top: 20px;	
+}
+
+/*read more link*/
+.readmore_link a {
+text-decoration: underline;
+text-transform: uppercase;
+margin: 0 15px 15px 15px;
+font-size: 10px;
+display: inline-block;
+}
+
+.entry_content .readmore_link a {
+margin: 0;
+margin-top: 0px;	
+}
+
+/************************************************************************
+7) FORMS
+*************************************************************************/
+
+/* A- SEARCH FORM */
+
+input {
+font-family: "Arial", sans-serif;
+}
+
+#search_form {
+width: 226px;
+height: auto;
+position: absolute;
+right: 26px;
+top: 40px;
+float: right;
+display: block;	
+}
+
+#logo_and_navigation #search_form {	/*this for if you want to use the search form in the logo and navigation side*/
+top: 442px;
+right: 0;	
+}
+
+#search_form label {
+display: block;
+font-size: 9px;
+line-height: 14px;
+}
+
+#search_form input#search {
+width: 226px;
+padding: 13px 0;
+font-size: 11px;
+text-align: center;
+/*text-transform: uppercase;
+*/outline: none;
+border: none;	
+}
+
+/* B- CONTACT FORM */
+
+#contact_form {
+display: block;
+overflow: hidden;
+padding-top: 10px;
+}
+
+#contact_form p {
+padding: 0;	
+}
+
+#contact_form label { width: 140px; margin-top: 6px; }
+#contact_form label.error, #contact_form input.submit { margin-left: 143px; }
+#contact_form input.submit {width: auto; outline: none; padding: 7px 18px; font-size: 12px; margin-left: 143px; }
+#contact_form label.error, label.error {
+margin-top: 0;
+width: auto;
+}
+div.error { display: none; }
+#contact_form input, #contact_form textarea {
+border: none;
+padding: 10px 13px;
+width: 290px;
+outline: medium none;
+font-size: 11px;
+font-family: "Arial", sans-serif;
+}
+#contact_form textarea {height: 150px;}
+
+form#contact_form label {
+display: inline-block;
+line-height: 1.8;
+vertical-align: top;
+}
+
+form#contact_form p {
+list-style: none;
+padding-bottom: 10px;
+margin: 0;
+}
+.legal {
+	color: #CCC;
+}
+.header {
+	color: #dfcaa0;
+}
+.legal {
+	color: #CCC;
+}
+.legal {
+	color: #CCC;
+}
+.legal {
+	color: #CCC;
+}
+.fullwidth #full_container #right_side_container #footer_wrapper #footer .copyright {
+	color: #000;
+}
+.fullwidth #full_container #right_side_container #footer_wrapper #footer .copyright .legal {
+	color: #000;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright {
+	color: #000;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright .legal {
+	color: #000;
+}
+#full_container #right_side_container .website_heading h1 .header {
+	color: #CECFCD;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright {
+	color: #000;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright .legal1 {
+	color: #000;
+}
+#full_container {
+	color: #000;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright .legal2 {
+	color: #000;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright {
+	color: #000;
+}
+#full_container #right_side_container #footer_wrapper #footer .copyright .legal3 {
+	color: #000;
+}
+.fullwidth #full_container #right_side_container #main_wrapper #main h1 .header {
+	color: #DCDDDE;
+}

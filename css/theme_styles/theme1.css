@@ -1,0 +1,338 @@
+/* HERE IS THE STYLING OPTIONS LIKE COLORS AND BACKGROUNDS */
+
+
+body {
+color: #333;	/*this color is applied on the paragraphs color*/
+background: #FFFFFF 	/*website background*/
+background-attachment: fixed;	
+}
+
+#full_container {
+background: url(../../images/theme/background_styles/1/light_effect1.png) no-repeat top left;	/*light background effect under logo and navigation*/
+background-attachment: fixed;	
+}
+
+/* Selection Styles*/
+::-moz-selection{
+background:#000000;	/*background color of fonts when highlight texts by mouse*/
+color:#fff;	/*color of fonts when highlight texts by mouse*/
+}
+
+::selection {
+background:#000000;	/*background color when highlight texts by mouse*/
+color:#fff;	/*color of fonts when highlight texts by mouse*/
+}
+
+/*
+
+1) LOGO AND NAVIGATION CONTAINER
+     
+	A- LOGO
+	B- NAVIGATION
+
+2) RIGHT SIDE CONTAINER
+
+	A- WEBSITE HEADING
+	
+3) PORTFOLIO
+4) FOOTER
+
+	A- COPYRIGHT
+	B- SOCIAL ICONS
+	
+5) MAIN
+
+	A- MAIN CONTENT
+	B- SIDEBAR
+	
+6) GENERIC
+7) FORMS
+
+	A- SEARCH FORM
+	B- CONTACT FORM			
+
+*/
+
+
+/************************************************************************
+1) LOGO AND NAVIGATION CONTAINER
+*************************************************************************/
+
+/* A- LOGO */
+
+.logo a, .logo a:hover {
+color: #fff;
+background: url(../../images/theme/logo.png) no-repeat top left;
+}
+
+/* B- NAVIGATION */
+
+ul#nav li a {
+	color: #000;	/*color of not current links*/
+	font-size: 16px;
+}
+
+ul#nav li a.current {
+	color: #000;	/*color of current link*/
+}
+
+ul#nav li a.hoverMenu {
+color:#fff;	/*color of link when hover*/
+}
+
+/************************************************************************
+2) RIGHT SIDE CONTAINER
+*************************************************************************/
+
+.website_heading h1 {
+	color: #dcddde;	/*color of the top website heading*/
+}
+
+span.website_title, span.portfolio_title {
+	color: #000;	/*color of the website title in the website heading, also the color of the portfolio page title*/
+}
+
+/************************************************************************
+2) PORTFOLIO
+*************************************************************************/
+
+.portfolio_item {
+background: #ffffff url(../../images/theme/arround_main.png) repeat top left; 	/*the pattern background of each portfolio item*/
+}
+
+.portfolio_frontpage_title {
+color: #8f754b;	/*the general color of the portfolio title in the frontpage*/
+}
+
+.portfolio_item span.item_title {
+color: #000000;	/*color of the title of each portfolio item*/
+}
+
+/* sliding box */
+
+.boxgrid{ 
+background:#dcddde; 	/*background of the internal content of each portfolio item*/
+}
+
+/*preview button*/
+span.preview a {
+background: url(../../images/theme/zoom.png) no-repeat center center;	/*background image of preview button for prettyphoto preview*/
+color: #000000;
+}
+
+span.preview a:hover {
+background: #f8e0b9 url(../../images/theme/zoom.png) no-repeat center center;	/*background color when hover*/ /* good background color #EFDDB9 */
+
+}
+
+/************************************************************************
+4) FOOTER
+*************************************************************************/
+
+#footer {
+color: #e9d8b6;	/*color of footer content*/
+background: url("../../images/theme/footer.png") no-repeat center center ;	/*background image of footer*/
+}
+
+/* A- COPYRIGHT */
+
+.copyright .website_title_footer {
+	color: #000;	/*color of website title in the copyright message*/
+}
+
+/************************************************************************
+5) MAIN
+*************************************************************************/
+
+#main_wrapper {
+background: #ffffff url(../../images/theme/arround_main.png) repeat top left;	/*the pattern background which make the effect of like 5px border of pattern effect of main content*/
+}
+
+#main {
+background: #ffffff;	/*background of main content*/	
+}
+
+/*main heading*/
+#main_heading {
+color: #000000;	/*color of main heading title*/
+background: url(../../images/theme/border_bottom2.png) repeat-x right bottom;	/*color of bottom border main heading title*/
+}
+
+
+/* A- CONTENT */
+
+/*entry title*/
+.entry_title {
+background: url(../../images/theme/border_bottom2.png) repeat-x right bottom;	/*color of border bottom of each entry title*/	
+}
+
+/*entry head*/
+.entry_head {
+background: url(../../images/theme/border_bottom2.png) repeat-x right bottom;	/*color of border bottom of blog post entry head*/	
+}
+
+.category a, .user a, .date a, .comments a {
+color: #d38102;	/*color of entry head content links elements*/
+}
+
+.category a:hover, .user a:hover, .date a:hover, .comments a:hover {
+color: #000000;	/*color hover of entry head content links elements*/
+}
+
+.category a {
+background: url(../../images/entry_head/tag.png) no-repeat left top;	/*background of category link element*/
+}
+
+.user a {
+background: url(../../images/entry_head/user.png) no-repeat left top;	/*background of user link element*/
+}
+
+.comments a {
+background: url(../../images/entry_head/comment.png) no-repeat left top;	/*background of comments link element*/
+}
+
+.date a {
+background: url(../../images/entry_head/date.png) no-repeat left top;		/*background of date link element*/
+}
+
+/*pagination*/
+#pagination .pages {
+color: #000000;	/*color of left texts of the pagination, i mean except the pages button*/
+}
+
+#pagination .pages .number {
+color: #d38102;	/*color of number of the left text of the pagination*/
+}
+
+#pagination ul li a.inactive, #pagination ul li span.active {
+border-top: 2px solid #d38102;	/*color of border top of pagination buttons*/	
+}
+
+#pagination ul li span.active {
+background: url(../../images/theme/submit.png) repeat top left;	/*background of active pagination page button*/
+color: #cfc1a5;	/*color of active pagination page button*/	
+}
+
+#pagination ul li a.inactive {
+background: #f8e0b9;	/*background of inactive pagination page button*/	
+color: #d38102;	/*color of inactive pagination page button*/
+}
+
+#pagination ul li a.inactive:hover {
+background: #fff;	/*hover color of inactive pagination page button*/	
+}
+
+/* B- SIDEBAR */
+
+/*box sidebar title*/
+.box_sidebar_title {
+background: url(../../images/theme/border_bottom2.png) repeat-x right bottom;	/*color of border bottom of sidebar box titles*/
+color: #dd8e00;	
+}
+
+/*menu sidebar*/
+ul.menu_sidebar li {
+background: url(../../images/theme/border_bottom2.png) repeat-x right bottom;	/*color of border bottom of sidebar menu links*/
+}
+
+ul.menu_sidebar li a {
+background: url(../../images/theme/bullet.png) no-repeat left center;	/*background of sidebar menu links*/
+background-position: 10px;
+color: #333;	/*color of sidebar menu links*/
+}
+
+ul.menu_sidebar li a:hover {
+background: #ffefcf url(../../images/theme/bullet_hover.png) no-repeat left center;	/*hover background of sidebar menu links*/
+background-position: 10px;
+color: #d38102;	/*hover color of sidebar menu links*/	
+}
+
+/************************************************************************
+6) GENERIC
+*************************************************************************/
+
+/*headers setting*/
+h1, h2, h3, h4, h5, h6 {
+color: #000000;	/*color of main content headers*/	
+}
+
+/*image alignment*/
+
+.entry_content img {
+background: #d3d5d7;
+border: 1px solid #d3d5d7;
+}
+
+/*separation line*/
+.separation {
+background: url(../../images/theme/border_bottom2.png) repeat-x right bottom; 	/*color of separation line*/
+}
+
+/*top sliding*/
+.top_sliding a {
+color: #cfc1a5;	/*color of the top sliding button*/
+background: url(../../images/theme/top_sliding.png) no-repeat center center;	/*background of the top sliding button*/
+}
+
+.top_sliding a:hover {
+color: #ffb139;	/*hover color of the top sliding button*/		
+}
+
+/*read more link*/
+.readmore_link a {
+color: #d38102;	/*color of the read more links*/
+}
+
+.readmore_link a:hover {
+color: #000000;	/*hover color of the read more links*/	
+}
+
+/************************************************************************
+7) FORMS
+*************************************************************************/
+
+/* A- SEARCH FORM */
+
+#search_form label {
+color: #5b5244;	/*label color of search form*/
+}
+
+#search_form input#search {
+color: #c9ba9e;	/*color of input field text of search form*/
+background: url(../../images/theme/search_input.png) no-repeat center center;	/*background of input field of search form*/
+}
+
+/* B- CONTACT FORM */
+
+#contact_form label, #contact_form input, #contact_form textarea {
+color: #000000;	/*colors of label, input and textarea texts*/
+}
+
+#contact_form input, #contact_form textarea {border-bottom: 2px solid #d38102;	/*color of border bottom of input and textarea fields */
+color: #000000;	/*color of input and textarea texts */
+background: #f8e0b9;	/*background of input and textarea fields */
+}
+
+#contact_form input:focus, #contact_form textarea:focus {
+background: #fff;	/*onfocus background of input and textarea fields */
+}
+
+#contact_form input.submit {
+background: #15130F url(../../images/theme/submit.png) repeat top left;	/*background of submit button*/
+border-bottom: 2px solid #d38102;	/*color of border bottom of submit button*/
+color: #cfc1a5;	/*color of submit button text*/
+cursor: pointer;
+}
+
+#contact_form input.submit:hover {
+color: #fff;	/*hover color of submit button text*/
+}
+
+/*validation coloring settings*/
+
+#contact_form label.error, label.error {
+color: red;	/*color of appearing validation message*/
+}
+
+#contact_form input.error, #contact_form textarea.error { 
+background: url(../../images/theme/arround_main.png) repeat top left; }	/*background of field that need validation*/
